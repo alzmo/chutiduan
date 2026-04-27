@@ -1,24 +1,18 @@
-"""Batch-export candidate levels as JSON files for solver-side consumption."""
+"""Generate candidate levels and print them as JSON for solver debugging."""
 
 from __future__ import annotations
 
 import json
-from pathlib import Path
 from typing import Dict, List
 
 from generator import build_level_id, generate_level, validate_generated_level
 
 # Export parameters (edit directly if needed)
-LEVEL_COUNT = 10
-COLOR_COUNT = 6
-MAX_STACK_HEIGHT = 4
-TARGET_BLOCK_COUNT = 72
-OUTPUT_DIR = Path("levels")
+LEVEL_COUNT = 5
+COLOR_COUNT = 3
+MAX_STACK_HEIGHT = 2
+TARGET_BLOCK_COUNT = 24
 MAX_GENERATION_ATTEMPTS_PER_LEVEL = 50
-
-
-def _build_file_name(index: int) -> str:
-    return f"level_{index:04d}.json"
 
 
 def _generate_valid_level(level_id: str) -> Dict:
@@ -42,40 +36,26 @@ def _generate_valid_level(level_id: str) -> Dict:
 
 
 def main() -> None:
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-
     exported: List[Dict] = []
 
     for index in range(1, LEVEL_COUNT + 1):
         level_id = build_level_id(index)
         level = _generate_valid_level(level_id)
 
-        file_name = _build_file_name(index)
-        output_path = OUTPUT_DIR / file_name
-
-        with output_path.open("w", encoding="utf-8") as f:
-            json.dump(level, f, ensure_ascii=False, indent=2)
-            f.write("\n")
+        print(f"===== {level['id']} =====")
+        print(f"blocks: {len(level['blocks'])}")
+        print(f"basketSequence: {len(level['basketSequence'])}")
+        print(json.dumps(level, ensure_ascii=False, indent=2))
 
         exported.append(
             {
-                "file_name": file_name,
                 "level_id": level["id"],
                 "blocks_count": len(level["blocks"]),
                 "basket_length": len(level["basketSequence"]),
             }
         )
 
-    print(f"Generated {len(exported)} levels")
-    print(f"Output directory: {OUTPUT_DIR.resolve()}")
-    print("Level files:")
-    for item in exported:
-        print(
-            f"- {item['file_name']} "
-            f"(id={item['level_id']}, "
-            f"blocks={item['blocks_count']}, "
-            f"basketSequence={item['basket_length']})"
-        )
+    print(f"Generated {len(exported)} valid levels")
 
 
 if __name__ == "__main__":
