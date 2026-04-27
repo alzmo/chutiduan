@@ -1,0 +1,464 @@
+{
+  "id": "LEVEL_0001",
+  "size": 8,
+  "blocks": [
+    {
+      "code": "1.1.COLOR_1",
+      "cellId": 1,
+      "layer": 1,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "2.1.COLOR_4",
+      "cellId": 2,
+      "layer": 1,
+      "color": "COLOR_4"
+    },
+    {
+      "code": "2.2.COLOR_1",
+      "cellId": 2,
+      "layer": 2,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "2.3.COLOR_6",
+      "cellId": 2,
+      "layer": 3,
+      "color": "COLOR_6"
+    },
+    {
+      "code": "2.4.COLOR_6",
+      "cellId": 2,
+      "layer": 4,
+      "color": "COLOR_6"
+    },
+    {
+      "code": "3.1.COLOR_1",
+      "cellId": 3,
+      "layer": 1,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "7.1.COLOR_4",
+      "cellId": 7,
+      "layer": 1,
+      "color": "COLOR_4"
+    },
+    {
+      "code": "7.2.COLOR_4",
+      "cellId": 7,
+      "layer": 2,
+      "color": "COLOR_4"
+    },
+    {
+      "code": "8.1.COLOR_3",
+      "cellId": 8,
+      "layer": 1,
+      "color": "COLOR_3"
+    },
+    {
+      "code": "8.2.COLOR_6",
+      "cellId": 8,
+      "layer": 2,
+      "color": "COLOR_6"
+    },
+    {
+      "code": "8.3.COLOR_5",
+      "cellId": 8,
+      "layer": 3,
+      "color": "COLOR_5"
+    },
+    {
+      "code": "13.1.COLOR_1",
+      "cellId": 13,
+      "layer": 1,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "13.2.COLOR_6",
+      "cellId": 13,
+      "layer": 2,
+      "color": "COLOR_6"
+    },
+    {
+      "code": "13.3.COLOR_6",
+      "cellId": 13,
+      "layer": 3,
+      "color": "COLOR_6"
+    },
+    {
+      "code": "14.1.COLOR_5",
+      "cellId": 14,
+      "layer": 1,
+      "color": "COLOR_5"
+    },
+    {
+      "code": "14.2.COLOR_5",
+      "cellId": 14,
+      "layer": 2,
+      "color": "COLOR_5"
+    },
+    {
+      "code": "15.1.COLOR_4",
+      "cellId": 15,
+      "layer": 1,
+      "color": "COLOR_4"
+    },
+    {
+      "code": "15.2.COLOR_4",
+      "cellId": 15,
+      "layer": 2,
+      "color": "COLOR_4"
+    },
+    {
+      "code": "15.3.COLOR_1",
+      "cellId": 15,
+      "layer": 3,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "15.4.COLOR_2",
+      "cellId": 15,
+      "layer": 4,
+      "color": "COLOR_2"
+    },
+    {
+      "code": "16.1.COLOR_3",
+      "cellId": 16,
+      "layer": 1,
+      "color": "COLOR_3"
+    },
+    {
+      "code": "16.2.COLOR_1",
+      "cellId": 16,
+      "layer": 2,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "17.1.COLOR_5",
+      "cellId": 17,
+      "layer": 1,
+      "color": "COLOR_5"
+    },
+    {
+      "code": "19.1.COLOR_2",
+      "cellId": 19,
+      "layer": 1,
+      "color": "COLOR_2"
+    },
+    {
+      "code": "20.1.COLOR_1",
+      "cellId": 20,
+      "layer": 1,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "20.2.COLOR_2",
+      "cellId": 20,
+      "layer": 2,
+      "color": "COLOR_2"
+    },
+    {
+      "code": "22.1.COLOR_2",
+      "cellId": 22,
+      "layer": 1,
+      "color": "COLOR_2"
+    },
+    {
+      "code": "22.2.COLOR_1",
+      "cellId": 22,
+      "layer": 2,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "23.1.COLOR_3",
+      "cellId": 23,
+      "layer": 1,
+      "color": "COLOR_3"
+    },
+    {
+      "code": "24.1.COLOR_1",
+      "cellId": 24,
+      "layer": 1,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "24.2.COLOR_2",
+      "cellId": 24,
+      "layer": 2,
+      "color": "COLOR_2"
+    },
+    {
+      "code": "25.1.COLOR_3",
+      "cellId": 25,
+      "layer": 1,
+      "color": "COLOR_3"
+    },
+    {
+      "code": "25.2.COLOR_1",
+      "cellId": 25,
+      "layer": 2,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "26.1.COLOR_5",
+      "cellId": 26,
+      "layer": 1,
+      "color": "COLOR_5"
+    },
+    {
+      "code": "26.2.COLOR_5",
+      "cellId": 26,
+      "layer": 2,
+      "color": "COLOR_5"
+    },
+    {
+      "code": "26.3.COLOR_1",
+      "cellId": 26,
+      "layer": 3,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "27.1.COLOR_5",
+      "cellId": 27,
+      "layer": 1,
+      "color": "COLOR_5"
+    },
+    {
+      "code": "27.2.COLOR_3",
+      "cellId": 27,
+      "layer": 2,
+      "color": "COLOR_3"
+    },
+    {
+      "code": "27.3.COLOR_2",
+      "cellId": 27,
+      "layer": 3,
+      "color": "COLOR_2"
+    },
+    {
+      "code": "28.1.COLOR_1",
+      "cellId": 28,
+      "layer": 1,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "28.2.COLOR_1",
+      "cellId": 28,
+      "layer": 2,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "28.3.COLOR_5",
+      "cellId": 28,
+      "layer": 3,
+      "color": "COLOR_5"
+    },
+    {
+      "code": "29.1.COLOR_4",
+      "cellId": 29,
+      "layer": 1,
+      "color": "COLOR_4"
+    },
+    {
+      "code": "30.1.COLOR_2",
+      "cellId": 30,
+      "layer": 1,
+      "color": "COLOR_2"
+    },
+    {
+      "code": "33.1.COLOR_1",
+      "cellId": 33,
+      "layer": 1,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "33.2.COLOR_2",
+      "cellId": 33,
+      "layer": 2,
+      "color": "COLOR_2"
+    },
+    {
+      "code": "34.1.COLOR_5",
+      "cellId": 34,
+      "layer": 1,
+      "color": "COLOR_5"
+    },
+    {
+      "code": "35.1.COLOR_1",
+      "cellId": 35,
+      "layer": 1,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "35.2.COLOR_1",
+      "cellId": 35,
+      "layer": 2,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "41.1.COLOR_1",
+      "cellId": 41,
+      "layer": 1,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "46.1.COLOR_4",
+      "cellId": 46,
+      "layer": 1,
+      "color": "COLOR_4"
+    },
+    {
+      "code": "48.1.COLOR_3",
+      "cellId": 48,
+      "layer": 1,
+      "color": "COLOR_3"
+    },
+    {
+      "code": "48.2.COLOR_3",
+      "cellId": 48,
+      "layer": 2,
+      "color": "COLOR_3"
+    },
+    {
+      "code": "50.1.COLOR_1",
+      "cellId": 50,
+      "layer": 1,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "51.1.COLOR_5",
+      "cellId": 51,
+      "layer": 1,
+      "color": "COLOR_5"
+    },
+    {
+      "code": "52.1.COLOR_6",
+      "cellId": 52,
+      "layer": 1,
+      "color": "COLOR_6"
+    },
+    {
+      "code": "52.2.COLOR_3",
+      "cellId": 52,
+      "layer": 2,
+      "color": "COLOR_3"
+    },
+    {
+      "code": "53.1.COLOR_3",
+      "cellId": 53,
+      "layer": 1,
+      "color": "COLOR_3"
+    },
+    {
+      "code": "53.2.COLOR_3",
+      "cellId": 53,
+      "layer": 2,
+      "color": "COLOR_3"
+    },
+    {
+      "code": "53.3.COLOR_1",
+      "cellId": 53,
+      "layer": 3,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "56.1.COLOR_1",
+      "cellId": 56,
+      "layer": 1,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "57.1.COLOR_2",
+      "cellId": 57,
+      "layer": 1,
+      "color": "COLOR_2"
+    },
+    {
+      "code": "57.2.COLOR_1",
+      "cellId": 57,
+      "layer": 2,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "58.1.COLOR_5",
+      "cellId": 58,
+      "layer": 1,
+      "color": "COLOR_5"
+    },
+    {
+      "code": "59.1.COLOR_3",
+      "cellId": 59,
+      "layer": 1,
+      "color": "COLOR_3"
+    },
+    {
+      "code": "61.1.COLOR_1",
+      "cellId": 61,
+      "layer": 1,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "62.1.COLOR_1",
+      "cellId": 62,
+      "layer": 1,
+      "color": "COLOR_1"
+    },
+    {
+      "code": "63.1.COLOR_5",
+      "cellId": 63,
+      "layer": 1,
+      "color": "COLOR_5"
+    },
+    {
+      "code": "63.2.COLOR_4",
+      "cellId": 63,
+      "layer": 2,
+      "color": "COLOR_4"
+    },
+    {
+      "code": "63.3.COLOR_4",
+      "cellId": 63,
+      "layer": 3,
+      "color": "COLOR_4"
+    },
+    {
+      "code": "64.1.COLOR_3",
+      "cellId": 64,
+      "layer": 1,
+      "color": "COLOR_3"
+    },
+    {
+      "code": "64.2.COLOR_1",
+      "cellId": 64,
+      "layer": 2,
+      "color": "COLOR_1"
+    }
+  ],
+  "basketSequence": [
+    "COLOR_4",
+    "COLOR_1",
+    "COLOR_4",
+    "COLOR_6",
+    "COLOR_2",
+    "COLOR_6",
+    "COLOR_5",
+    "COLOR_1",
+    "COLOR_3",
+    "COLOR_4",
+    "COLOR_3",
+    "COLOR_5",
+    "COLOR_1",
+    "COLOR_1",
+    "COLOR_3",
+    "COLOR_5",
+    "COLOR_5",
+    "COLOR_1",
+    "COLOR_1",
+    "COLOR_3",
+    "COLOR_2",
+    "COLOR_1",
+    "COLOR_1",
+    "COLOR_2"
+  ]
+}
