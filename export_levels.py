@@ -1,8 +1,9 @@
-"""Generate candidate levels and print them as JSON for solver debugging."""
+"""Generate candidate levels and export each as a JSON file."""
 
 from __future__ import annotations
 
 import json
+from pathlib import Path
 from typing import Dict, List
 
 from generator import build_level_id, generate_level, validate_generated_level
@@ -13,6 +14,7 @@ COLOR_COUNT = 3
 MAX_STACK_HEIGHT = 2
 TARGET_BLOCK_COUNT = 24
 MAX_GENERATION_ATTEMPTS_PER_LEVEL = 50
+LEVELS_DIR = Path("levels")
 
 
 def _generate_valid_level(level_id: str) -> Dict:
@@ -36,24 +38,31 @@ def _generate_valid_level(level_id: str) -> Dict:
 
 
 def main() -> None:
+    LEVELS_DIR.mkdir(parents=True, exist_ok=True)
     exported: List[Dict] = []
 
     for index in range(1, LEVEL_COUNT + 1):
         level_id = build_level_id(index)
         level = _generate_valid_level(level_id)
+        file_name = f"level_{index:04d}.json"
+        file_path = LEVELS_DIR / file_name
 
-        print(f"===== {level['id']} =====")
-        print(f"blocks: {len(level['blocks'])}")
-        print(f"basketSequence: {len(level['basketSequence'])}")
-        print(json.dumps(level, ensure_ascii=False, indent=2))
+        with file_path.open("w", encoding="utf-8") as output_file:
+            json.dump(level, output_file, ensure_ascii=False, indent=2)
 
         exported.append(
             {
                 "level_id": level["id"],
                 "blocks_count": len(level["blocks"]),
                 "basket_length": len(level["basketSequence"]),
+                "file_name": file_name,
             }
         )
+
+        print(f"===== {level['id']} =====")
+        print(f"blocks: {len(level['blocks'])}")
+        print(f"basketSequence: {len(level['basketSequence'])}")
+        print(f"file: {file_name}")
 
     print(f"Generated {len(exported)} valid levels")
 
